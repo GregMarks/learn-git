@@ -1,0 +1,15 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+tokens.json
+*.pem
+
+# Build & deps
+node_modules/
+dist/
+coverage/
+
+# Editor/OS noise
+.DS_Store
+*.log

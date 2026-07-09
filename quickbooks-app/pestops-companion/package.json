@@ -1,0 +1,33 @@
+{
+  "name": "pestops-companion",
+  "version": "0.1.0",
+  "description": "QuickBooks Online + FieldRoutes companion: QBO gap-filler and FieldRoutes revenue bridge (reporting, sync audit, reconciliation).",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "qbc": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "qbc": "tsx src/cli/index.ts",
+    "connect": "tsx src/auth/connect.ts",
+    "mcp": "tsx src/mcp/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
