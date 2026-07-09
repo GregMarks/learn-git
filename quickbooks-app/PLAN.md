@@ -69,8 +69,10 @@ both writing revenue at the same time.
 
 ## 2. Recommended architecture
 
-Build the app as a **custom MCP server + thin CLI**, in **TypeScript/Node**, in a new repo
-(suggested name: `pestops-companion` — it's more than QuickBooks now).
+Build the app as a **custom MCP server + thin CLI**, in **TypeScript/Node**, in a new repo.
+**Update: the repo now exists — https://github.com/GregMarks/GsPestControl — with the
+first milestone built (QBO client, FieldRoutes read-only client, sync audit, revenue
+reports, CLI, MCP server). See its SETUP.md to get connected.**
 
 Why this shape:
 
